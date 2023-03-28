@@ -1,21 +1,20 @@
-import './landing.css'
+import React from 'react';
+import './landing.css';
 const Landing = () => {
     return (
         <>
             <div className="landingPageMain">
-                <div className="landingHome">
-                    <div className="landingWelcomeMsgContainer">
-                        <h1 className="landingWelcomeMessage">Let's Make Better Trades Through StonksUp</h1>
-                        <h6 className="landingParagraph">Get Real Time Simulation On Live Stocks Trading With our wide Range of Choices</h6>
-                    </div>
-                    <div className="landingHomeImages">
-                        <div className="landingCircle1"></div>
-                        <div className="landingCircle2"></div>
-                        <img className="landingImage1" src="../assets/image3.jpg" alt=""/>
-                        <img className="landingImage2" src="../assets/image1.webp" alt=""/>
-                        <img className="landingImage3" src="../assets/image2.jpg" alt="" />
+                <div className="landingBg">
+                    <img className="landingBg1" src="../assets/bg4.jpg" alt="" />
+                    <img className="landingBg2" src="../assets/bg1.png" alt="" />
+                    <img className="landingBg3" src="../assets/s1.png" alt="" />
+                    <div className="landingMsgContainer">
+                            <h1 className="landingMsg">
+                                Get Set Trade With The All New <span className="landingDomainName">STONKS-UP</span>
+                            </h1>
                     </div>
                 </div>
+
             </div>
         </>
     );
