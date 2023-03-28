@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { Line } from "react-chartjs-2";
 import "./dashboard.css";
+import {CategoryScale} from 'chart.js'; 
 
+import Chart from 'chart.js/auto';
+Chart.register(CategoryScale);
 function Dashboard({ price, data }) {
   const opts = {
     tooltips: {

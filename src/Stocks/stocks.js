@@ -2,7 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Dashboard from "./components/Dashboard";
 import formatData from "./utils";
 import "./stocks.css";
+import {CategoryScale} from 'chart.js'; 
 
+import Chart from 'chart.js/auto';
+Chart.register(CategoryScale);
 export default function Stocks() {
   const [currencies, setcurrencies] = useState([]);
   const [pair, setpair] = useState("");
@@ -106,7 +109,7 @@ export default function Stocks() {
     <div className="container">
       {
         <select name="currency" value={pair} onChange={handleSelect}>
-          {currencies.map((cur, idx) => {
+          {currencies?.map((cur, idx) => {
             return (
               <option key={idx} value={cur.id}>
                 {cur.display_name}
