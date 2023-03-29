@@ -5,11 +5,11 @@ import Landing from "./Landing/landing";
 import Navbar from "./Navbar/Navbar";
 import Instrument from "./Instruments/instruments";
 import AboutUs from "./AboutUs/aboutUs";
-import Stocks from "./Stocks/stocks";
+import Stocks from "./Stocks1Component/stocks";
 
-import Home from "./components/Home/Home";
-import Login from "./components/Login/Login";
-import Signup from "./components/Signup/Signup";
+import Home from "./LoginComponents/Home/Home";
+import Login from "./LoginComponents/Login/Login";
+import Signup from "./LoginComponents/Signup/Signup";
 
 import { auth } from "./firebase";
 function App() {

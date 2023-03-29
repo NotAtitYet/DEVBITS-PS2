@@ -1,5 +1,6 @@
 import React from 'react';
 import './landing.css';
+import TradingInstruments from './tradingInstruments';
 const Landing = () => {
     return (
         <>
@@ -14,6 +15,7 @@ const Landing = () => {
                             </h1>
                     </div>
                 </div>
+                <TradingInstruments/>
 
             </div>
         </>
