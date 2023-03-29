@@ -4,9 +4,9 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 import InputControl from "../InputControl/InputControl";
 import { auth } from "../../firebase";
-
+import { signInWithGoogle } from "../../firebase";
 import styles from "./Signup.module.css";
-
+import cx from 'classnames';
 function Signup() {
   const navigate = useNavigate();
   const [values, setValues] = useState({
@@ -42,39 +42,47 @@ function Signup() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Signup</h1>
 
-        <InputControl
-          label="Name"
+      <div className={styles.innerBox}>
+        <h1 className={cx(styles.heading,styles.neonText)}>Signup</h1>
+        <p>Name</p>
+        <InputControl 
+ 
+          // label="Name"
           placeholder="Enter your name"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
           }
         />
+        <p>Email</p>
         <InputControl
-          label="Email"
+          // label="Email"
           placeholder="Enter email address"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
         />
+        <p>Password</p>
         <InputControl
-          label="Password"
+          // label="Password"
           placeholder="Enter password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
         />
 
-        <div className={styles.footer}>
+        <div className={cx(styles.footer)}>
           <b className={styles.error}>{errorMsg}</b>
+          <div className={styles.bottom}>
           <button onClick={handleSubmission} disabled={submitButtonDisabled}>
             Signup
           </button>
+          <button disabled={submitButtonDisabled} onClick={signInWithGoogle} className={styles.login}>
+           With Google
+          </button></div>
           <p>
-            Already have an account?{" "}
-            <span>
+            Already have an account? &nbsp; {" "}
+            <span className={styles.neonText}>
               <Link to="/login">Login</Link>
             </span>
           </p>

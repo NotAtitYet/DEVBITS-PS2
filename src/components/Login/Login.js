@@ -4,10 +4,11 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 
 import InputControl from "../InputControl/InputControl";
 import { auth } from "../../firebase";
-
+import { signInWithGoogle } from "../../firebase";
+import cx from 'classnames';
 import styles from "./Login.module.css";
-
 function Login() {
+  
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -35,20 +36,24 @@ function Login() {
         setErrorMsg(err.message);
       });
   };
+
+  
+
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Login</h1>
-
+        <h1 className={cx(styles.heading,styles.neonText)}>Login</h1>
+        <p>Email</p>
         <InputControl
-          label="Email"
+          // label="Email"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
           placeholder="Enter email address"
         />
+                <p>Password</p>
         <InputControl
-          label="Password"
+          // label="Password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
@@ -57,13 +62,17 @@ function Login() {
 
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
+          <div className={styles.bottom}>
           <button disabled={submitButtonDisabled} onClick={handleSubmission}>
             Login
           </button>
+          <button disabled={submitButtonDisabled} onClick={signInWithGoogle} className={styles.login}>
+            "With Google"
+          </button></div>
           <p>
-            Already have an account?{" "}
-            <span>
-              <Link to="/signup">Sign up</Link>
+            Don't have an account? &nbsp;{" "}
+            <span className={styles.neonText}>
+              <Link to="/signup"> Sign up</Link>
             </span>
           </p>
         </div>
