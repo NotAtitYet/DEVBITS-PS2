@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-
+import { useEffect } from "react";
 import InputControl from "../InputControl/InputControl";
 import { auth } from "../../firebase";
 import { signInWithGoogle } from "../../firebase";
 import cx from 'classnames';
 import styles from "./Login.module.css";
 function Login() {
-  
+  const history = useNavigate();
+
+  useEffect(() => {
+    // Check if the user is already signed in
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        // User is signed in, redirect to the redirect URL
+        history.push('/redirect');
+      }
+    });
+  }, [history]);
+
+
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",

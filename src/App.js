@@ -6,21 +6,22 @@ import Navbar from "./Navbar/Navbar";
 import Instrument from "./Instruments/instruments";
 import AboutUs from "./AboutUs/aboutUs";
 import Stocks from "./Stocks/stocks";
-
+import Dashboard from "./Dashboard/Dashboard";
+import Crypto from "./Crypto/Crypto"
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
+import { auth,db } from "./firebase";
 
-import { auth } from "./firebase";
 function App() {
 
-  const [userName, setUserName] = useState("");
+  const [user, setUser] = useState("");
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        setUserName(user.displayName);
-      } else setUserName("");
+        setUser(user);
+      } else setUser("");
     });
   }, []);
 
@@ -57,13 +58,32 @@ function App() {
             }
           />
           <Route
-            path="stocks"
+            path="/stocks"
             element={
               <>
                 <Stocks />
               </>
             }
           />
+
+<Route
+            path="/crypto"
+            element={
+              <>
+                <Crypto />
+              </>
+            }
+          />
+
+<Route
+            path="/Dashboard"
+            element={
+              <>
+                <Dashboard />
+              </>
+            }
+          />
+
 
           <Route path="/login" element={<Login />} />
           <Route path="/signIn" element={<Signup />} />
