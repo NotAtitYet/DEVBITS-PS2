@@ -15,7 +15,8 @@
     height: 80%;
     min-height: 100vh;
     width: 100%;
-    background-image: url("./bg6.jpg");
+    /* background-image: url("./bg6.jpg"); */
+
     background-size:cover;
     display: flex;
     /* padding-right: 5%; */
