@@ -18,7 +18,7 @@ const Instrument = () => {
                             <p className="contentPara">We're constantly innovating and expanding our offerings, and we have a dedicated team of professionals who are committed to our long-term success. By investing in our stock, you'll become a part of our company's growth story and have the potential to earn significant returns.</p>
                             <div className="contentButtons">
                                 <div className="button1">
-                                    <Link className="buttonToBuy" to="/stocks">
+                                    <Link className="buttonToBuy" to="/stock">
                                         Proceed To Buy
                                     </Link>
                                 </div>
@@ -31,7 +31,7 @@ const Instrument = () => {
                             <p className="contentPara">Our bonds are backed by our company's assets and have a proven track record of performance. They provide a fixed rate of return and are a great way to diversify your investment portfolio while minimizing risk.</p>
                             <div className="contentButtons">
                                 <div className="button1">
-                                    <Link className="buttonToBuy" to="/stock">
+                                    <Link className="buttonToBuy" to="/stocks">
                                         Proceed To Buy
                                     </Link>
                                 </div>
