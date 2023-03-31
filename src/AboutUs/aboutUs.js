@@ -14,19 +14,57 @@ const AboutUs = () => {
                             <h1>Our Vision</h1>
                         </div>
                         <div className="aboutParagraph">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat inventore asperiores sunt in! Dicta aliquam accusantium quasi iste cupiditate voluptatum facere nemo aperiam magni, voluptates numquam animi commodi est facilis assumenda fugit perspiciatis dolorem, rem, distinctio dolores dignissimos a minus eos nulla. Ullam aliquam atque fugit aperiam, laudantium sunt dolorem architecto quibusdam temporibus, eveniet perferendis laboriosam praesentium hic. Soluta dolor vitae iusto ipsam itaque fugit omnis eveniet molestias odio culpa in dignissimos facilis, veniam, ullam minima. Sunt maxime dolor iste obcaecati vero quis tempora, eveniet minima similique molestiae ut quibusdam, voluptatem consequuntur totam provident tenetur vel nobis nihil? Ea velit aliquid itaque temporibus iste vel, optio nisi nostrum delectus beatae ducimus, porro repellat voluptates dolorum sapiente ipsam vitae? Animi a ipsam magnam temporibus nemo sunt, corrupti doloribus expedita at dolore saepe sint quaerat iusto nesciunt quam iste incidunt dolorem maxime ratione rem. Sequi praesentium, commodi maxime temporibus impedit rem ducimus ratione earum dolorem nisi ullam sint at magnam odio reprehenderit amet. Quod, necessitatibus dolorem et animi aliquam libero corrupti saepe ullam at deserunt? Quos at deleniti, unde, qui quis dolorum esse itaque architecto quisquam cumque adipisci inventore! Consectetur eligendi adipisci, sapiente est harum dolorum, accusamus modi deleniti, illo molestiae vel.</p>
+                            <p>Our financial broking company is built on a foundation of integrity, professionalism, and excellence in service. We understand that each client has unique financial needs and goals, and we work diligently to provide tailored solutions that meet those needs.
+
+We also understand the importance of educating our clients on the various investment options available to them, so they can make informed decisions about their finances. Our team of experts is always available to answer any questions our clients may have and to provide guidance throughout the investment process.
+
+At our company, we believe in building long-term relationships with our clients, based on trust and mutual respect. We strive to be proactive in our approach, regularly reviewing our clients' portfolios to ensure they remain aligned with their goals and risk tolerance.
+
+Additionally, we place a high value on giving back to the community and supporting charitable causes. We believe that being socially responsible is an integral part of our business, and we are committed to making a positive impact on the world around us.
+
+Overall, our vision is to be a leading financial broking company that offers exceptional service and innovative investment solutions to our clients. We are dedicated to helping our clients achieve financial success and security, and we are proud to be a trusted partner on their financial journey.</p>
                         </div>
                         <div className="aboutServicesHeading">
                             <h1>Our Services :</h1>
                         </div>
                         <div className="aboutServicesPara">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda impedit doloremque ut excepturi asperiores ratione reprehenderit sint molestiae laudantium cumque. Sunt iusto at illum animi debitis alias consectetur incidunt et aut nemo id esse est voluptate laborum, delectus porro rem quaerat itaque deleniti dolorem, nisi qui! Rem est quos error minima magnam enim odit harum quo veniam minus rerum ipsum tempore dolorem, aperiam numquam, exercitationem alias nobis eveniet animi optio architecto nihil velit? Itaque et possimus laboriosam ipsam at vitae quas accusamus praesentium in id dolor inventore, atque, sequi voluptatum nostrum! Aliquam omnis ipsum doloribus delectus, minus exercitationem adipisci, vitae illo repudiandae maiores pariatur, quaerat veniam minima perferendis corporis architecto ullam praesentium blanditiis! Id illum dolor dicta quam corrupti obcaecati praesentium quas, eos omnis nisi voluptates deleniti inventore eaque quibusdam nostrum officiis. Aliquam voluptate illum maiores recusandae iste, consectetur accusantium unde saepe ratione ea dicta temporibus vitae quod atque tempore explicabo numquam? Est ab eius beatae impedit vel ratione dolorum odit ipsa vero, cum aut voluptatem asperiores mollitia hic illo repellat officia natus corporis laudantium ipsum. Assumenda officia tempora earum velit quo dolores obcaecati sequi perferendis odit, incidunt natus, numquam illum veniam. Debitis nostrum eius voluptate ratione dicta ullam omnis.</p>
+                            <p>Financial broking companies provide a range of services to help clients invest in various financial instruments such as stocks, bonds, and cryptocurrencies:</p>
+                        </div>
+
+                        <div className="aboutServicesHeading">
+                            <h1>Stocks</h1>
+                        </div>
+
+                        <div className="aboutServicesPara">
+                            <p> A stock, also known as a share or equity, represents ownership in a company. Financial broking companies provide services that allow clients to buy and sell stocks on different stock exchanges. They also provide research and analysis on stocks, which helps clients make informed investment decisions.</p>
+                        </div>
+                        <div className="aboutExploreServices">
+                            <a href="/learn">Explore our services...</a>
+</div>
+
+                            <div className="aboutServicesHeading">
+                            <h1>Bonds</h1>
+                        </div>
+
+                        <div className="aboutServicesPara">
+                            <p> A bond is a fixed income investment that represents a loan made by an investor to a borrower, typically a government or corporation. Financial broking companies provide services that allow clients to buy and sell bonds, and also offer research and analysis on bonds.</p>
+                        </div>
+                        <div className="aboutExploreServices">
+                            <a href="/learn">Explore our services...</a>
+</div>
+
+
+                            <div className="aboutServicesHeading">
+                            <h1>Crypto</h1>
+                        </div>
+
+                        <div className="aboutServicesPara">
+                            <p> A stock, also known as a share or equity, represents ownership in a company. Financial broking companies provide services that allow clients to buy and sell stocks on different stock exchanges. They also provide research and analysis on stocks, which helps clients make informed investment decisions.</p>
                         </div>
                         <div className="aboutExploreServices">
                             <a href="/learn">Explore our services...</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>

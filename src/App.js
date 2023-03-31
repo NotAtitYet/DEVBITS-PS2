@@ -13,6 +13,7 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import { auth,db } from "./firebase";
 
+
 function App() {
 
   const [user, setUser] = useState("");
@@ -30,7 +31,9 @@ function App() {
 
   return (
     <div className="App">
+
       <Router>
+
         <Routes>
           <Route
             path="/"
@@ -85,11 +88,17 @@ function App() {
           />
 
 
+
           <Route path="/login" element={<Login />} />
           <Route path="/signIn" element={<Signup />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </Router>
+
+
+
+
+
     </div>
   );
 }

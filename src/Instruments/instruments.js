@@ -15,7 +15,7 @@ const Instrument = () => {
                     <div className="stocksBox">
                         <div className="content">
                             <h1 className="contentStocksHeading">Stocks</h1>
-                            <p className="contentPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium quibusdam dicta sint ratione optio fuga, saepe, possimus doloribus deserunt voluptas, ab vitae dolorum officiis assumenda labore necessitatibus temporibus architecto asperiores voluptate aspernatur veniam! Veniam maiores non ipsum harum possimus.</p>
+                            <p className="contentPara">We're constantly innovating and expanding our offerings, and we have a dedicated team of professionals who are committed to our long-term success. By investing in our stock, you'll become a part of our company's growth story and have the potential to earn significant returns.</p>
                             <div className="contentButtons">
                                 <div className="button1">
                                     <Link className="buttonToBuy" to="/stocks">
@@ -28,7 +28,7 @@ const Instrument = () => {
                     <div className="stocksBox">
                         <div className="content">
                             <h1 className="contentStocksHeading">Bonds</h1>
-                            <p className="contentPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium quibusdam dicta sint ratione optio fuga, saepe, possimus doloribus deserunt voluptas, ab vitae dolorum officiis assumenda labore necessitatibus temporibus architecto asperiores voluptate aspernatur veniam! Veniam maiores non ipsum harum possimus.</p>
+                            <p className="contentPara">Our bonds are backed by our company's assets and have a proven track record of performance. They provide a fixed rate of return and are a great way to diversify your investment portfolio while minimizing risk.</p>
                             <div className="contentButtons">
                                 <div className="button1">
                                     <Link className="buttonToBuy" to="/stocks">
@@ -41,10 +41,10 @@ const Instrument = () => {
                     <div className="stocksBox">
                         <div className="content">
                             <h1 className="contentStocksHeading">CryptoCurrency</h1>
-                            <p className="contentPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium quibusdam dicta sint ratione optio fuga, saepe, possimus doloribus deserunt voluptas, ab vitae dolorum officiis assumenda labore necessitatibus temporibus architecto asperiores voluptate aspernatur veniam! Veniam maiores non ipsum harum possimus.</p>
+                            <p className="contentPara">One of the main features of cryptocurrency is that it allows for secure and anonymous transactions without the need for a central authority, such as a bank or government. It also allows for quick and low-cost cross-border payments, making it an attractive alternative to traditional payment methods.</p>
                             <div className="contentButtons">
                                 <div className="button1">
-                                    <Link className="buttonToBuy" to="/stocks">
+                                    <Link className="buttonToBuy" to="/crypto">
                                         Proceed To Buy
                                     </Link>
                                 </div>

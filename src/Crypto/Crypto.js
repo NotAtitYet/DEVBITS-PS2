@@ -6,7 +6,7 @@ import Coin from './routes/Coin'
 import Navbar from './components/Navbar'
 
 
-function App() {
+function Crypto() {
 
   const [coins, setCoins] = useState([])
 
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Crypto;
