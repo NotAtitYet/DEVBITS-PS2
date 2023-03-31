@@ -16,7 +16,7 @@
     z-index: 1;
 }
 .aboutFlexContainer{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(195 111 189 / 20%);
     height: fit-content;
     padding: 3vh 5vw;
     border-radius: 3vh;

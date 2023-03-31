@@ -11,7 +11,7 @@
     margin: 10vh 5vw;
     padding: 1.5vh 2vw;
     border-radius: 2vh;
-    background: rgba(0, 223, 41, 0.2);
+    background: rgb(195 111 189 / 20%);
     z-index: 3;
 }
 .instrumentBoxHeading{
