@@ -41,3 +41,16 @@
     font-size: 1.6rem;
     font-weight: 700;
 }
+
+.NavDash{
+    font-size: 1.6rem;    font-weight: 700;
+    cursor: pointer;
+    color: white;
+
+}
+.NavDash:hover{
+cursor: pointer;
+}
+.das{
+color: white;
+}
