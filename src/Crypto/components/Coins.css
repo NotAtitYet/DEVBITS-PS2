@@ -2,7 +2,10 @@
     max-width: 1140px;
     margin: auto;
 }
-
+.CoinsMain{
+    background: url(./bg6.jpg);
+    background-size: cover;
+}
 .heading {
     display: flex;
     justify-content: space-between;

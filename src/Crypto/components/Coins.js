@@ -7,7 +7,7 @@ import './Coins.css'
 
 const Coins = (props) => {
     return (
-        <div className='container'>
+        <div className='container CoinsMain'>
             <div>
                 <div className='heading'>
                     <p>#</p>

@@ -83,7 +83,7 @@ function Dashboard(props) {
 
 
   return (
-    <div>
+    <div className="dashboardMain">
 
       {/* <div className="card-container">
         <header>
