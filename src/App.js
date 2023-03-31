@@ -12,7 +12,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import { auth,db } from "./firebase";
-
+import Stock from "./Stock/Stock";
 
 function App() {
 
@@ -68,6 +68,18 @@ function App() {
               </>
             }
           />
+
+
+<Route
+            path="/stock"
+            element={
+              <>
+                <Stock />
+              </>
+            }
+          />
+
+
 
 <Route
             path="/crypto"
